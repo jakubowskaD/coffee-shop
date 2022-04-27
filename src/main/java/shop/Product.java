@@ -1,7 +1,7 @@
 package shop;
 
 public class Product {
-    String name;
+    private String name;
 
     public Product(String name) {
         this.name = name;
