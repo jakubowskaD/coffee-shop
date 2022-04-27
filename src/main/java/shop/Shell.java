@@ -12,6 +12,10 @@ public class Shell {
         this.maxNumberOfProducts = maxNumberOfProducts;
     }
 
+    public Shell(Product product) {
+        this.product = product;
+    }
+
     public int getMaxNumberOfProducts() {
         return maxNumberOfProducts;
     }

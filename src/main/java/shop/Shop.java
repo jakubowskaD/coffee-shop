@@ -7,6 +7,6 @@ import java.util.Map;
 
 public class Shop {
     public List<Shell>shells = new ArrayList<>();
-    public Map<Integer, Shell> shellMap = new HashMap<>();
+    public Map<Integer, Product> shellMap = new HashMap<>();
     Shell shell;
 }
