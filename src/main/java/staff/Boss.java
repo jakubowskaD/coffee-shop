@@ -33,18 +33,13 @@ public class Boss implements Staff{
     }
 
     @Override
-    public void takeOn(Shell shell, Product product) {
+    public void takeOn(Shell shell, Product product, String day) {
 
     }
 
     @Override
-    public void takeOff(Shell shell, Product product) {
+    public void takeOff(Shell shell, Product product, String day) {
 
-    }
-
-    @Override
-    public boolean isWorkingDay(Weekday weekday) {
-        return false;
     }
 
 }

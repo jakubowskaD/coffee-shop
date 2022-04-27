@@ -6,14 +6,20 @@ import java.util.List;
 public class Shell {
     public List<Product> products = new ArrayList<>();
     Product product;
-    private final int maxNumberOfProducts;
+    private int maxNumberOfProducts;
+    private int number;
 
     public Shell(int maxNumberOfProducts) {
         this.maxNumberOfProducts = maxNumberOfProducts;
     }
 
-    public Shell(Product product) {
+    public Shell(int number,Product product) {
+        this.number = number;
         this.product = product;
+    }
+
+    public int getNumber() {
+        return number;
     }
 
     public int getMaxNumberOfProducts() {
