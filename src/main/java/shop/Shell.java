@@ -1,7 +1,9 @@
 package shop;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Shell {
     private final int shellNumber;
@@ -17,10 +19,16 @@ public class Shell {
         return shellNumber;
     }
 
-    public int getMaxProductsNumber() {
-        return maxProductsNumber;
-    }
     public boolean isFreePlace(int shellNumber){
         return products.size() < maxProductsNumber;
+    }
+
+    @Override
+    public String toString() {
+        return "Shell{" +
+                "shellNumber=" + shellNumber +
+                ", maxProductsNumber=" + maxProductsNumber +
+                ", products=" + products +
+                '}';
     }
 }

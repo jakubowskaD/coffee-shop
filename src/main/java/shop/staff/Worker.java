@@ -4,7 +4,9 @@ import shop.Product;
 import shop.Shell;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Worker {
     public List<String> workingOffDays = new ArrayList<>();
@@ -26,6 +28,7 @@ public class Worker {
         if(!isWorkingOffDay(day)){
             if (shell.isFreePlace(shell.getShellNumber())){
           shell.products.add(new Product(product.getName()));
+                System.out.println(shell);
           System.out.println("Aj!");
         }} else System.out.println("Sorry Boss, today is my free day");
     }
@@ -33,6 +36,7 @@ public class Worker {
     public void takeOff(String day, Product product, Shell shell){
             if(!isWorkingOffDay(day)){
                     shell.products.remove(new Product(product.getName()));
+                    System.out.println(shell);
                     System.out.println("Aj!");
                 } else System.out.println("Sorry Boss, today is my free day");
             }
